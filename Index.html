@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuoteWave 🌟 | Daily Inspiration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="themeBtn" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Main Quote Card -->
+        <div class="quote-container" id="quoteContainer">
+            <div class="quote-card">
+                <div class="quote-header">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <button id="speakBtn" class="speak-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                
+                <blockquote id="quoteText">
+                    Click "New Quote" to get inspired!
+                </blockquote>
+                
+                <div class="quote-author">
+                    <span id="quoteAuthor">-- Author</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="quote-actions">
+                    <button id="newQuoteBtn" class="btn primary large">
+                        <i class="fas fa-sync-alt"></i> New Quote
+                    </button>
+                </div>
+
+                <!-- Social Share -->
+                <div class="share-buttons">
+                    <button class="share-btn" id="twitterShare" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" id="whatsappShare" title="Share on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button class="share-btn" id="copyBtn" title="Copy Quote">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote Counter -->
+        <div class="quote-counter">
+            <span id="quoteCounter">Quote #1</span>
+        </div>
+
+        <!-- Loading Animation -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
